@@ -5,7 +5,6 @@ import 'package:islami_app/tabs/hadeth/hadeth_details.dart';
 import 'package:islami_app/tabs/quran/sura_details.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
 import 'home_screen.dart';
 import 'my_theme_data.dart';
 
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
       darkTheme: MyThemeData.darkTheme,
       themeMode: provider.theme,
       //themeMode: ThemeMode.dark,
-
       initialRoute: splash_screen.routeName,
       routes: {
         splash_screen.routeName: (context) => splash_screen(),

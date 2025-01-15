@@ -19,13 +19,11 @@ class _SuraDetailsState extends State<SuraDetails> {
     var mediaQuery = MediaQuery.of(context).size;
     var theme = Theme.of(context);
     var args = ModalRoute.of(context)?.settings.arguments as SuraModel;
-
     return ChangeNotifierProvider(
       create: (context) => SuraDetailsProvider()..readFiles(args.suranumber),
       builder: (context, child) {
         var provider = Provider.of<SuraDetailsProvider>(context);
         var pro = Provider.of<MyProvider>(context);
-
         return Container(
           decoration: BoxDecoration(
             image: DecorationImage(
